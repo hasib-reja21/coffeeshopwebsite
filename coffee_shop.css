@@ -217,7 +217,7 @@ span{
     padding: .5rem 0;
 }
 .menu-item .box-container .box .price span{
-    color:crimson;
+    font-weight: lighter;
     font-size: 1.5rem;
     text-decoration: line-through;
 }
@@ -230,9 +230,11 @@ span{
 }
 
 /* product section*/
-
+.product{
+    background: var(--bg-color);
+}
 .product .heading{
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: var(--h2-font);
     margin-bottom: 40px;
     display: flex;
@@ -244,8 +246,20 @@ span{
     margin-left: 10px;
     font-weight: 600;
 }
-.product .product-container .product-box .icon{
-    color: var(--bg-color);
+.product .product-container .product-box .icon i{
+    color:var(--second-color);
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 2rem;
+    border:1px solid var(--text-color);
+    margin: .3rem;
+    border-radius: 5px;
+    
+}
+
+.product .product-container .product-box .icon i:hover{
+    background: lemonchiffon;
 }
 .product .product-container{
     display: grid;
@@ -253,10 +267,37 @@ span{
     gap: 1.5rem;
 }
 .product-box{
-   
-    
     padding: 3rem;
     text-align: center;
-    border: 1px solid var(--bg-color);
+    border: 1px solid var(--text-color);
     border-radius: 8px;
+}
+.product .product-container .product-box .image{
+    padding: 2.5rem 0;
+}
+.product .product-container .product-box .image img{
+    height: 20rem;
+}
+.product .product-container .product-box .content h3{
+    color:var(--second-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.product .product-container .product-box .content .price{
+    margin-bottom: 20px;
+    color:var(--second-color);
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}.product .product-container .product-box .content .price span{
+  font-weight: lighter;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+
+}
+.product .product-container .product-box .content .star{
+    padding: 1.5rem;
+}
+.product .product-container .product-box .content .star i{
+    font-size: 1.7rem;
+    color: lemonchiffon;
 }
