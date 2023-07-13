@@ -163,7 +163,11 @@ span{
  }
 
  /*menu section*/
+ .menu-item{
+    background: var(--second-bg-color);
+ }
 .menu-item .heading{
+    color: var(--text-color);
     font-size: var(--h2-font);
     margin-bottom: 40px;
     display: flex;
@@ -179,6 +183,7 @@ span{
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    border: 1px solid var(--text-color);
 }
 .menu-item .box-container{
     display: grid;
@@ -186,15 +191,18 @@ span{
     gap: 1.5rem;
 }
  .box{
+    height: 350px;
+    width: 400px;
     background: var(--bg-color);
     padding: 3rem;
     text-align: center;
     border: 1px solid var(--bg-color);
     border-radius: 8px;
+   
 }
 .box:hover{
-    transform: scale(1.1);
-    background: var(--bg-color);
+    color: var(--bg-color);
+    background: var(--text-color);
     transition: all .45s ease;
 }
 .menu-item .box-container .box h3{
@@ -203,7 +211,20 @@ span{
     padding: 1rem 0;
 }
 .menu-item .box-container .box .price{
+    margin-bottom: 20px;
     color:var(--second-color);
     font-size: 2.5rem;
     padding: .5rem 0;
+}
+.menu-item .box-container .box .price span{
+    color:crimson;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.menu-item .box-container .box .btn{
+   border-radius: 5px;
+    font-size: var(--p-font);
+    text-decoration: none;
+    background: lemonchiffon;
+    padding: 10px 15px;
 }
