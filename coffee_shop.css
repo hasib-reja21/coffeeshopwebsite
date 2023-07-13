@@ -176,8 +176,8 @@ span{
     font-weight: 600;
 }
 .box-container .box img{
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
 }
 .menu-item .box-container{
@@ -186,10 +186,24 @@ span{
     gap: 1.5rem;
 }
  .box{
+    background: var(--bg-color);
     padding: 3rem;
     text-align: center;
-    border: 1px solid crimson;
+    border: 1px solid var(--bg-color);
+    border-radius: 8px;
+}
+.box:hover{
+    transform: scale(1.1);
+    background: var(--bg-color);
+    transition: all .45s ease;
 }
 .menu-item .box-container .box h3{
     color:var(--second-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu-item .box-container .box .price{
+    color:var(--second-color);
+    font-size: 2.5rem;
+    padding: .5rem 0;
 }
