@@ -284,7 +284,7 @@ span{
     padding: 1rem 0;
 }
 .product .product-container .product-box .content .price{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color:var(--second-color);
     font-size: 2.5rem;
     padding: .5rem 0;
