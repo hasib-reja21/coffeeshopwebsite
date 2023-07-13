@@ -98,7 +98,7 @@ span{
 }
 .icon{
     color: var(--text-color);
-    background: var(--main-color);
+   
 }
 .icon .one{
     border-bottom: 10px;
@@ -227,4 +227,36 @@ span{
     text-decoration: none;
     background: lemonchiffon;
     padding: 10px 15px;
+}
+
+/* product section*/
+
+.product .heading{
+    color: var(--bg-color);
+    font-size: var(--h2-font);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.product span{
+    margin-left: 10px;
+    font-weight: 600;
+}
+.product .product-container .product-box .icon{
+    color: var(--bg-color);
+}
+.product .product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+.product-box{
+   
+    
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid var(--bg-color);
+    border-radius: 8px;
 }
